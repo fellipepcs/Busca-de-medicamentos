@@ -1,3 +1,5 @@
+
+
 FROM node:lts-alpine
 
 # install simple http server for serving static content
@@ -18,5 +20,5 @@ COPY . .
 # build app for production with minification
 RUN npm run build
 
-EXPOSE 8080
+EXPOSE 5173
 CMD ["npm", "run", "dev"]
