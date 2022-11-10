@@ -1,9 +1,26 @@
+# Desafio ProMáxima
 
-docker build -t promaxima .
+Para iniciar a aplicação, acesse a pasta 
+```/Promáxima/backend/api```
 
-sudo docker run -it -p 8080:8080 --rm --name promaxima promaxima
+Após acessar digite os comando abaixo:
 
+```sudo docker-compose up --build```
 
-Backend
+Depois disso o backend containerizado estará rodando na porta 8000.
 
-sudo docker-compose up --build
+### Abra outro terminal
+
+Acesse a pasta do frontend:
+
+```/Promáxima/frontend/promaxima```
+
+Após isso execute os seguintes comandos abaixo:
+
+```sudo docker-compose build```
+
+```sudo docker-compose up```
+
+Depois disso o frontend já integrado com o backend estára rodando na porta 5173 e disponivel para a visualização.
+
+Obs: Foi citado acima para utilizar sudo(linux), em alguns casos não é necessário.
